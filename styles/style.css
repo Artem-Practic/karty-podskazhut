@@ -15,7 +15,6 @@
 .page {
   min-inline-size: 360px;
   margin: 0;
-
   background-color: var(--bg-color, #f3efec);
   color: var(--text-color, #312a4e);
 }
@@ -28,8 +27,10 @@ blockquote,
 ul,
 ol,
 li,
-figure {
+figure,
+button {
   margin: 0;
+  padding: 0;
 }
 
 .theme_dark {
@@ -51,7 +52,6 @@ button:focus {
   font-family: var(--accent-font, serif);
   font-style: normal;
   font-weight: 600;
-
   line-height: 90%;
   letter-spacing: normal;
   text-align: center;
@@ -132,13 +132,17 @@ button:focus {
 
 .content__title {
   font-size: 30px;
-  margin-top: 6.2vw;
+  margin-top: 6.4vw;
   margin-bottom: 2.2vw;
 }
 
 .content__text-block {
   font-family: var(--main-font, sans-serif);
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
+  line-height: 21px;
 }
 
 .content__paragraph a {
@@ -171,6 +175,9 @@ button:focus {
 .content__list {
   list-style: none;
   padding-left: 40px;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .content__list-item {
@@ -183,7 +190,7 @@ button:focus {
 .content__list-item::before {
   position: absolute;
   left: -26px;
-  top: 6px;
+  top: 30%;
   content: "";
   display: inline-block;
   width: 15px;
@@ -203,11 +210,11 @@ button:focus {
   background-color: var(--accent-color);
   padding-left: 4px;
   padding-right: 4px;
-  margin-right: 5px;
-
-  font-weight: 700;
+  margin-right: 1px;
   font-size: 30px;
-  line-height: 35px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2;
 }
 
 .theme_dark
@@ -217,7 +224,7 @@ button:focus {
 }
 
 .content__figure {
-  margin-top: 6.2vw;
+  margin-top: 6.35vw;
   margin-bottom: 6.2vw;
   width: calc(100% + 10vi);
   position: relative;
@@ -241,7 +248,7 @@ button:focus {
 }
 
 .content__card {
-  margin-top: 6.2vw;
+  margin-top: 6.4vw;
   width: 100%;
   aspect-ratio: 4/3;
   border: 1px solid currentColor;
@@ -300,3 +307,7 @@ button:focus {
   line-height: 21px;
   color: currentColor;
 }
+
+/* *{
+  border: 1px solid red;
+}  */
